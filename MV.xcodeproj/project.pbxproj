@@ -99,13 +99,11 @@
 		180EF24F1EC353E800DA7C8A /* MV */ = {
 			isa = PBXGroup;
 			children = (
+				180EF2841EC3564100DA7C8A /* Supporting files */,
 				180EF2501EC353E800DA7C8A /* AppDelegate.swift */,
-				180EF2521EC353E800DA7C8A /* ViewController.swift */,
-				180EF2541EC353E900DA7C8A /* Main.storyboard */,
-				180EF25A1EC353E900DA7C8A /* Assets.xcassets */,
-				180EF25C1EC353EA00DA7C8A /* LaunchScreen.storyboard */,
-				180EF25F1EC353EA00DA7C8A /* Info.plist */,
-				180EF2571EC353E900DA7C8A /* MV.xcdatamodeld */,
+				180EF2811EC3560300DA7C8A /* Model */,
+				180EF2821EC3561200DA7C8A /* Controller */,
+				180EF2831EC3562000DA7C8A /* View */,
 			);
 			path = MV;
 			sourceTree = "<group>";
@@ -126,6 +124,40 @@
 				180EF2751EC353F300DA7C8A /* Info.plist */,
 			);
 			path = MVUITests;
+			sourceTree = "<group>";
+		};
+		180EF2811EC3560300DA7C8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		180EF2821EC3561200DA7C8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				180EF2521EC353E800DA7C8A /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		180EF2831EC3562000DA7C8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				180EF25C1EC353EA00DA7C8A /* LaunchScreen.storyboard */,
+				180EF2541EC353E900DA7C8A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		180EF2841EC3564100DA7C8A /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				180EF25A1EC353E900DA7C8A /* Assets.xcassets */,
+				180EF25F1EC353EA00DA7C8A /* Info.plist */,
+				180EF2571EC353E900DA7C8A /* MV.xcdatamodeld */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
