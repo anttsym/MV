@@ -15,6 +15,7 @@
 		180EF25E1EC353EA00DA7C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180EF25C1EC353EA00DA7C8A /* LaunchScreen.storyboard */; };
 		180EF2691EC353F200DA7C8A /* MVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2681EC353F200DA7C8A /* MVTests.swift */; };
 		180EF2741EC353F300DA7C8A /* MVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2731EC353F300DA7C8A /* MVUITests.swift */; };
+		180EF2861EC35A4300DA7C8A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2851EC35A4300DA7C8A /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		180EF26F1EC353F200DA7C8A /* MVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180EF2731EC353F300DA7C8A /* MVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUITests.swift; sourceTree = "<group>"; };
 		180EF2751EC353F300DA7C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180EF2851EC35A4300DA7C8A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = Model/APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		180EF2811EC3560300DA7C8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				180EF2851EC35A4300DA7C8A /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180EF2861EC35A4300DA7C8A /* APIManager.swift in Sources */,
 				180EF2591EC353E900DA7C8A /* MV.xcdatamodeld in Sources */,
 				180EF2531EC353E800DA7C8A /* ViewController.swift in Sources */,
 				180EF2511EC353E800DA7C8A /* AppDelegate.swift in Sources */,
