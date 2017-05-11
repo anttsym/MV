@@ -17,13 +17,19 @@ class ViewController: UIViewController {
         let api = APIManager()
         
         // 1 вариант
-        api.loadData(urlString: "http://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", complition: didLoadData)
+        //api.loadData(urlString: "http://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", complition: didLoadData)
         
         // 2 вариант - передать функцию - называется trailing clousure
-        api.loadData(urlString: "http://itunes.apple.com/us/rss/topmusicvideos/limit=10/json") {
+        api.loadData(urlString: "http://itunes.apple.com/us/rss/topmusicvideos/limit=2/json") {
             (result:String) in
             print(result)
         }
+        
+        
+        //let videosNames = Videos.init(data: <#T##JSONDictionary#>)
+        
+        // Задание - получить только названия видео
+        
     }
 
     // Это callback или complition handler

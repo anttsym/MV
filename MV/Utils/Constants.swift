@@ -13,3 +13,5 @@ import Foundation
 typealias JSONDictionary = [String: AnyObject]
 
 typealias JSONArray = Array<AnyObject>
+
+//typealias JSONArray = Array<String>

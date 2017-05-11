@@ -18,6 +18,7 @@
 		180EF2861EC35A4300DA7C8A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2851EC35A4300DA7C8A /* APIManager.swift */; };
 		18C3E42E1EC4831A00987569 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E42D1EC4831A00987569 /* Constants.swift */; };
 		18C3E4301EC484B800987569 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E42F1EC484B800987569 /* MusicVideo.swift */; };
+		18C3E4321EC4954F00987569 /* MusicVideos2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E4311EC4954F00987569 /* MusicVideos2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		180EF2851EC35A4300DA7C8A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = Model/APIManager.swift; sourceTree = "<group>"; };
 		18C3E42D1EC4831A00987569 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
 		18C3E42F1EC484B800987569 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicVideo.swift; path = Model/MusicVideo.swift; sourceTree = "<group>"; };
+		18C3E4311EC4954F00987569 /* MusicVideos2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideos2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		180EF2811EC3560300DA7C8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18C3E4311EC4954F00987569 /* MusicVideos2.swift */,
 				180EF2851EC35A4300DA7C8A /* APIManager.swift */,
 				18C3E42F1EC484B800987569 /* MusicVideo.swift */,
 			);
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C3E42E1EC4831A00987569 /* Constants.swift in Sources */,
+				18C3E4321EC4954F00987569 /* MusicVideos2.swift in Sources */,
 				180EF2861EC35A4300DA7C8A /* APIManager.swift in Sources */,
 				180EF2591EC353E900DA7C8A /* MV.xcdatamodeld in Sources */,
 				18C3E4301EC484B800987569 /* MusicVideo.swift in Sources */,

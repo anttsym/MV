@@ -14,6 +14,8 @@ class APIManager {
                   complition: @escaping (_ result:String) -> Void)  // Что это?
                 // complition: @escaping (_ result:String) -> ())  // Void и () равнозначны
     {
+        
+        // ПЕРЕДАЛИ СТРОКУ
         //let session = URLSession.shared                             // Создаем указатель на сессию с помощью обращения к синглтону
         
         let config = URLSessionConfiguration.ephemeral              // Другой вариант
@@ -34,6 +36,8 @@ class APIManager {
                     //print(data!) выведет количество байт
                     //print(data as Any)
                     //print(data as NSData!)                          // ? Опасно ?
+                    
+        // ПОЛУЧИЛИ БИНАРНЫЕ ДАННЫЕ
                     print(data as NSData?)                          // Более правильно // Ведь ответа может и не быть
                     
                     
@@ -44,8 +48,23 @@ class APIManager {
                                                              options: JSONSerialization.ReadingOptions.allowFragments)      // iTunes json - это dictionary
                                 as AnyObject?
                         {
-                            
+        // ... ПОЛУЧИЛИ JSON
                             print(json)
+        // ... НАПЕЧАТАЛИ JSON
+                            
+                            
+        // ПОПРОБУЕМ ВЫВЕСТИ НАЗВАНИЯ ...
+                            let musicVideo = Videos(data: json as! JSONDictionary)
+                            print(musicVideo.vName)
+                            
+        // ... ЭТО РАБОТАЕТ ТОЛЬКО // ЕСЛИ У НАС ОДНО ЗНАЧЕНИЕ
+                            
+        // ПОПРОБУЕМ МАССИВ ...
+                            
+                            //let musicVideo = Videos(data: json as! JSONDictionary)
+                            print(musicVideo.arrayOfNames)
+                            
+                            
                             
                             //let priority = DispatchQueue.GlobalQueuePriority.high                                 // Не работает  // Есть .high .default .low .background - все deprecated // use qos
                             let priority = DispatchQueue.global(qos: .background)                                   // Работает     // Как получить аналог priority .high
@@ -58,6 +77,7 @@ class APIManager {
                             }
                         }
                     } catch {
+        // ЕСЛИ  ПОЛУЧИЛИ ОШИБКУ, ТО ВЫВОДИМ ЕЁ
                         DispatchQueue.main.async {
                             complition("error in JSONSerialization")
                         }
