@@ -16,6 +16,8 @@
 		180EF2691EC353F200DA7C8A /* MVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2681EC353F200DA7C8A /* MVTests.swift */; };
 		180EF2741EC353F300DA7C8A /* MVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2731EC353F300DA7C8A /* MVUITests.swift */; };
 		180EF2861EC35A4300DA7C8A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EF2851EC35A4300DA7C8A /* APIManager.swift */; };
+		18C3E42E1EC4831A00987569 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E42D1EC4831A00987569 /* Constants.swift */; };
+		18C3E4301EC484B800987569 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E42F1EC484B800987569 /* MusicVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		180EF2731EC353F300DA7C8A /* MVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUITests.swift; sourceTree = "<group>"; };
 		180EF2751EC353F300DA7C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180EF2851EC35A4300DA7C8A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = Model/APIManager.swift; sourceTree = "<group>"; };
+		18C3E42D1EC4831A00987569 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
+		18C3E42F1EC484B800987569 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicVideo.swift; path = Model/MusicVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		180EF24F1EC353E800DA7C8A /* MV */ = {
 			isa = PBXGroup;
 			children = (
+				18C3E42C1EC482C600987569 /* Utils */,
 				180EF2841EC3564100DA7C8A /* Supporting files */,
 				180EF2501EC353E800DA7C8A /* AppDelegate.swift */,
 				180EF2811EC3560300DA7C8A /* Model */,
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				180EF2851EC35A4300DA7C8A /* APIManager.swift */,
+				18C3E42F1EC484B800987569 /* MusicVideo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -161,6 +167,14 @@
 				180EF2571EC353E900DA7C8A /* MV.xcdatamodeld */,
 			);
 			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		18C3E42C1EC482C600987569 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18C3E42D1EC4831A00987569 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C3E42E1EC4831A00987569 /* Constants.swift in Sources */,
 				180EF2861EC35A4300DA7C8A /* APIManager.swift in Sources */,
 				180EF2591EC353E900DA7C8A /* MV.xcdatamodeld in Sources */,
+				18C3E4301EC484B800987569 /* MusicVideo.swift in Sources */,
 				180EF2531EC353E800DA7C8A /* ViewController.swift in Sources */,
 				180EF2511EC353E800DA7C8A /* AppDelegate.swift in Sources */,
 			);
@@ -552,6 +568,7 @@
 				180EF27A1EC353F300DA7C8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180EF27B1EC353F300DA7C8A /* Build configuration list for PBXNativeTarget "MVTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +577,7 @@
 				180EF27D1EC353F300DA7C8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180EF27E1EC353F300DA7C8A /* Build configuration list for PBXNativeTarget "MVUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +586,7 @@
 				180EF2801EC353F300DA7C8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
