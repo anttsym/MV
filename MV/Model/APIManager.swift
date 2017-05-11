@@ -35,6 +35,33 @@ class APIManager {
                     //print(data as Any)
                     //print(data as NSData!)                          // ? Опасно ?
                     print(data as NSData?)                          // Более правильно // Ведь ответа может и не быть
+                    
+                    
+                    do {
+                        
+                        if let json =
+                            try JSONSerialization.jsonObject(with: data!,                                                   // Возьми data и сконвертируй в json object для нас // ! - значит Forse unwrap
+                                                             options: JSONSerialization.ReadingOptions.allowFragments)      // iTunes json - это dictionary
+                                as AnyObject?
+                        {
+                            
+                            print(json)
+                            
+                            //let priority = DispatchQueue.GlobalQueuePriority.high                                 // Не работает  // Есть .high .default .low .background - все deprecated // use qos
+                            let priority = DispatchQueue.global(qos: .background)                                   // Работает     // Как получить аналог priority .high
+                            // let priority = DispatchQoS(qosClass: .background, relativePriority: 0)               // Не работает
+                            // DispatchQueue.global(priority, 0).async {                                            // Не работает
+                            priority.async {
+                                DispatchQueue.main.async {
+                                    complition("JSONSerialization successful")
+                                }
+                            }
+                        }
+                    } catch {
+                        DispatchQueue.main.async {
+                            complition("error in JSONSerialization")
+                        }
+                    }
                 }
             }
         }
